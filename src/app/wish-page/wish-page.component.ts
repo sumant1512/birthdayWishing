@@ -17,7 +17,12 @@ export class WishPageComponent implements OnInit {
   @ViewChild("balloon_border", { static: false }) balloon_border: ElementRef;
   @ViewChild("full_body", { static: false }) full_body: ElementRef;
   @ViewChild("bday_song") bday_song: ElementRef;
-  @ViewChild("test", { static: false }) test: ElementRef;
+  @ViewChild("cake_display", { static: false }) cake_display: ElementRef;
+  @ViewChild("burn1", { static: false }) burn1: ElementRef;
+  @ViewChild("burn2", { static: false }) burn2: ElementRef;
+  @ViewChild("burn3", { static: false }) burn3: ElementRef;
+  @ViewChild("burn4", { static: false }) burn4: ElementRef;
+  @ViewChild("burn5", { static: false }) burn5: ElementRef;
   @ViewChild("b1", { static: false }) b1: ElementRef;
   @ViewChild("b2", { static: false }) b2: ElementRef;
   @ViewChild("b3", { static: false }) b3: ElementRef;
@@ -31,6 +36,7 @@ export class WishPageComponent implements OnInit {
     "Let's Decorate",
     "Fly With Ballons",
     "Show Delicious Cake",
+    "Light Candle",
   ];
   index = 0;
   currentBtnName = this.buttonNameList[this.index];
@@ -82,10 +88,14 @@ export class WishPageComponent implements OnInit {
         this.loopSeven();
         break;
       case 4:
-        this.test.nativeElement.classList.add("slow");
-        // this.birthday_banner.nativeElement.classList.add(
-        //   'birthday-banner-come'
-        // );
+        this.cake_display.nativeElement.classList.add("d-block");
+        break;
+      case 5:
+        this.burn1.nativeElement.classList.add("d-block");
+        this.burn2.nativeElement.classList.add("d-block");
+        this.burn3.nativeElement.classList.add("d-block");
+        this.burn4.nativeElement.classList.add("d-block");
+        this.burn5.nativeElement.classList.add("d-block");
         break;
     }
     this.index = this.index + 1;
