@@ -1,0 +1,88 @@
+<div class="off-light" #full_body>
+  <div class="balloons text-center" id="b1" #b1>
+    <h2 style="color: #f2b300">H</h2>
+  </div>
+  <div class="balloons text-center" id="b2" #b2>
+    <h2 style="color: #0719d4">B</h2>
+  </div>
+  <div class="balloons text-center" id="b3" #b3>
+    <h2 style="color: #d14d39">D</h2>
+  </div>
+  <div class="balloons text-center" id="b4" #b4>
+    <h2 style="color: #8fad00">X</h2>
+  </div>
+  <div class="balloons text-center" id="b5" #b5>
+    <h2 style="color: #8377e4">O</h2>
+  </div>
+  <div class="balloons text-center" id="b6" #b6>
+    <h2 style="color: #99c96a">L</h2>
+  </div>
+  <div class="balloons text-center" id="b7" #b7>
+    <h2 style="color: #20cfb4">A</h2>
+  </div>
+
+  <audio controls #bday_song>
+    <source src="../../assets/songs/hbd.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <img
+    src="../../assets/ballons/Balloon-Border.png"
+    width="100%"
+    class="balloon-border"
+    #balloon_border
+  />
+
+  <div class="container-fluid">
+    <!-- Lights code start -->
+
+    <div class="row">
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_yellow" #bulb_yellow></div>
+      </div>
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_red" #bulb_red></div>
+      </div>
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_blue" #bulb_blue></div>
+      </div>
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_green" #bulb_green></div>
+      </div>
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_pink" #bulb_pink></div>
+      </div>
+      <div class="col-md-2 col-xs-2 bulb-holder">
+        <div class="bulb" id="bulb_orange" #bulb_orange></div>
+      </div>
+    </div>
+
+    <!-- Lights code end -->
+
+    <!-- birthdat banner code start -->
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img
+          src="../../assets/banners/birthday_banner.png"
+          class="birthday-banner"
+          #birthday_banner
+        />
+      </div>
+    </div>
+
+    <!-- birthdat banner code start -->
+
+    <!-- Button code start -->
+
+    <div class="row">
+      <div class="col-6">
+        <button class="absolute mb-3" type="submit" (click)="changeName()">
+          {{ currentBtnName }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Button code end -->
+  </div>
+</div>
