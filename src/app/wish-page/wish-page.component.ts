@@ -51,7 +51,7 @@ export class WishPageComponent implements OnInit {
         this.bulb_orange.nativeElement.classList.add("bulb-glow-orange");
         break;
       case 1:
-        // this.bday_song.nativeElement.play();
+        this.bday_song.nativeElement.play();
         this.bulb_yellow.nativeElement.classList.add("bulb-glow-yellow-after");
         this.bulb_red.nativeElement.classList.add("bulb-glow-red-after");
         this.bulb_blue.nativeElement.classList.add("bulb-glow-blue-after");
