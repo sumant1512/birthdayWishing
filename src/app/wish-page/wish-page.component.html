@@ -93,9 +93,19 @@
 
     <!-- cake code end -->
 
+    <!-- message code start -->
+
+    <div class="row message" #birthday_message>
+      <div class="col-md-12">
+        <p>{{ message }}</p>
+      </div>
+    </div>
+
+    <!-- message code start -->
+
     <!-- Button code start -->
 
-    <div class="row w-100 text-center action-btn">
+    <div *ngIf="isButtonActive" class="row w-100 text-center action-btn">
       <div class="col-12">
         <button
           class="mb-5 btn btn-warning"
