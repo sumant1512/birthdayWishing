@@ -8,6 +8,11 @@
   background-color: #0b0bbb;
 }
 
+.action-btn {
+  bottom: 0;
+  position: absolute;
+}
+
 .on-light-after {
   -webkit-animation: on_light_alive linear 8s infinite;
   -moz-animation: on_light_alive linear 8s infinite;

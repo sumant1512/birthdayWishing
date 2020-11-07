@@ -73,11 +73,35 @@
 
     <!-- birthdat banner code start -->
 
+    <!-- cake code start -->
+
+    <div class="row cake-cover">
+      <div class="col-md-12 texr-center">
+        <div class="cake" #test>
+          <div class="velas">
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+          </div>
+          <div class="cobertura"></div>
+          <div class="bizcocho"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cake code end -->
+
     <!-- Button code start -->
 
-    <div class="row">
-      <div class="col-6">
-        <button class="absolute mb-3" type="submit" (click)="changeName()">
+    <div class="row w-100 text-center action-btn">
+      <div class="col-12">
+        <button
+          class="mb-5 btn btn-warning"
+          type="submit"
+          (click)="changeName()"
+        >
           {{ currentBtnName }}
         </button>
       </div>
