@@ -36,6 +36,7 @@ export class WishPageComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  // testing here
   changeName() {
     switch (this.index) {
       case 0:
