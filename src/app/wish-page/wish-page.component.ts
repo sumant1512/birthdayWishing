@@ -90,7 +90,7 @@ export class WishPageComponent implements OnInit {
     "lastly...",
     "I'd like to wish you one more time",
     "a very happy birthday to my Love",
-    "from Rachit Sethiya",
+    "from Tanu Paliwal",
   ];
   message: string;
   index = 0;
